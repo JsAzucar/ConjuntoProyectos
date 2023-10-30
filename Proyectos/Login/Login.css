@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuggles', cursive;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.Justificar{
+    display: flex;
+    justify-content:center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+i{
+    color:crimson;
+    font-size: 1.2rem;
+    margin-right: 3px;
+
+}
+form { 
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.Tamaño{
+    font-size: 1.5rem;
+    border:4px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    
+}
+
+label {
+    font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Alinear{
+    display: flex;
+   
+}
+
+#Formulario #BtnAcceso{
+    padding: 10px;
+    margin-top: 5px;
+    width: 50%;
+    color: white;
+    background-color: #09c372;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+#Formulario #BtnAcceso:hover{
+    background-color: chocolate;
+    transition:1s;
+    
+}
+
+/* Desde aquí hay cambios*/
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    
+}
+
+
+
+.input-control .Alinear :focus{
+    outline: 0;
+}
+.input-control .Alinear.success input{
+    border-color: #09c372;
+}
+
+.input-control .Alinear.error input{
+    border-color:  #ff3860;
+    flex-wrap: wrap;
+}
+
+.input-control .Error {
+    color: #ff3860;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align:center;
+    height: 100%;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.container{
+    display: flex;
+    margin: auto;
+    justify-content:space-between;
+    max-width: 2000px;
+    height: 85px;
+    z-index: 100;
+   
+}
+.container-log{
+    margin-left: 2rem;
+    z-index: 100;
+}
+.container-log h2{
+   color: chocolate;
+   font-weight: 500;
+   font-size: 2rem;
+   transition: 0.3s;
+}
+.container-log span{
+    color:chocolate;
+   font-weight: 700;
+   font-size: 1.5rem;
+}
+nav{
+    line-height: 4rem;
+}
+.link{
+   
+}
+.links .link{
+    display: inline-block;
+    
+
+}
+.links .link a{
+    color:chocolate;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+  
+}
+.Hamburguer{
+    margin-right: 2rem;
+    transition: 0.5s;
+}
+.Hamburguer h2{
+    transform: rotate(90deg);
+    transition: 0.3s;
+    color:chocolate;
+    display: none;
+}
+.rotate{
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+.Intro{
+    text-align: center;
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%,-45%);
+    transition: 2s;
+}
+.Intro p{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.Intro button:hover{
+    background-color: cadetblue;
+}
+.Intro button{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+.Marcas{
+    display: flex;
+    justify-content:space-around;
+}
+.Marcas .avion{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Marcas .avion:hover{
+    transform:scale(0.9);
+    transition: 2s;
+}
+.Aviones .fly:hover{
+    transform:scale(0.9);
+    transition: 2s;
+}
+.Marcas .Alineado{
+    text-align: center;
+    
+}
+.Marcas .Alineado p{
+    width: 250px;
+}
+.Aviones{
+    display: flex;
+    justify-content: space-around;
+}
+.Aviones .fly{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.Aviones .Alineado{
+    text-align: center;
+    
+}
+.Aviones .Alineado p{
+    width: 250px;
+    
+}
+.Main-Container{
+    margin:2rem 0;
+}
+.Main-Container .Espacio{
+    margin:2rem 0;
+}
+.Titulo h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+  
+}
+.Titulo h1:hover{
+    color:cornflowerblue
+  
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 20px;
+}
+footer div{
+    margin:1rem 4rem;
+    text-align: center;
+    width: 150px;
+    
+}
+@media screen and (max-width:800px){
+  .Main-Container .Espacio{
+    display: block;
+  }
+  .Espacio .Alineado .Prueba{
+    display: flex;
+    justify-content: center;
+  }
+  .Alineado{
+    margin: 2rem 0;
+  }
+
+
+}
+
+@media screen and (max-width:450px){
+    .Intro{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .Hamburguer h2{
+        display: inline-block;
+        
+    
+    }
+    .links{
+        display: flex;
+        flex-direction:column;
+        background-color: darkslateblue;
+        text-align: center;
+        position: absolute;
+        height: calc(70vh - 85px);
+        width: 100%;
+        top: -100vh;
+        transition: 1s;
+
+    }
+    .links .link:hover{
+        background-color: cadetblue;
+        transition: 2s;
+
+    }
+    .Intro {
+        text-align: center;
+        width: 50%;
+       
+       
+
+    }
+    .Intro button:hover{
+        background-color: cadetblue;
+    }
+    .active{
+        top:85px;
+        transition: 1s;
+        z-index: 100;
+        
+    }
+    .active-intro{
+        display: none;
+        transition: 2seg;
+    }
+    
+}
